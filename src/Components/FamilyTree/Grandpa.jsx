@@ -4,15 +4,15 @@ import Father from "./Father";
 import Uncle from "./Uncle";
 
 
-const Grandpa = () => {
+const Grandpa = ({asset}) => {
     return (
         <div>
             <h3>Grandpa</h3>
             <section className="flex">
    
-                 <Father></Father>
+                 <Father asset={asset}></Father>
                  <Uncle></Uncle>
-                 <Aunt></Aunt>
+                 <Aunt asset={asset}></Aunt>
             </section>
            
         </div>
